@@ -15,13 +15,13 @@
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
+  box-shadow: inset 0 0 5px black;
   border-radius: 8px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: black;
+  background: grey;
   border-radius: 10px;
 }
 
@@ -119,13 +119,45 @@ i {
   width: 70%;
 }
 
+.item {
+  overflow: hidden;
+}
+
 .movie-box {
   height: 100%;
   width: 80%;
   display: block;
+  cursor: pointer;
+
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.movie-box:hover {
+  font-size: 40px;
+
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .carousel-movies {
   margin-top: 5px;
   margin-left: 10px;
+}
+
+.carousel-titles {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  text-align: center;
+}
+
+footer a {
+  color: var(--vermelho);
+  text-decoration: none;
 }
